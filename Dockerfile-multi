@@ -1,0 +1,11 @@
+FROM adoptopenjdk/maven-openjdk11  AS BUILD
+
+WORKDIR /build
+COPY . /build
+RUN cd /build && mvn clean package
+
+
+FROM openjdk:11-jre
+COPY --from=BUILD /build/target/*.jar app.jar
+ENTRYPOINT ["java"]
+CMD ["-jar","app.jar"]
