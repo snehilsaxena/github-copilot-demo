@@ -4,6 +4,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SampleDataJpaApplication",
+            "request": "launch",
+            "mainClass": "com.example.data.jpa.SampleDataJpaApplication",
+            "projectName": "github-copilot"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-App",
             "request": "launch",
             "mainClass": "com.example.SampleDataJpaApplication",
