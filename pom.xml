@@ -19,6 +19,11 @@
 	</organization>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<java.version>17</java.version>
+		<java.source.version>17</java.source.version>
+		<java.target.version>17</java.target.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -33,6 +38,7 @@
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
 			<scope>runtime</scope>
+			<version>2.7.2</version>
 		</dependency>		
 		
 		<dependency>
