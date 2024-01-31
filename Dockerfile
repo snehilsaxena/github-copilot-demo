@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-alpine
+FROM  openjdk:11-ea-jre
 
 EXPOSE 8080
 ADD target/*.jar app.jar

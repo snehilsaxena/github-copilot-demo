@@ -19,11 +19,7 @@
 	</organization>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<maven.compiler.source>17</maven.compiler.source>
-		<maven.compiler.target>17</maven.compiler.target>
-		<java.version>17</java.version>
-		<java.source.version>17</java.source.version>
-		<java.target.version>17</java.target.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
