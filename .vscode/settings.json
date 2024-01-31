@@ -6,9 +6,5 @@
             "path": "/usr/lib/jvm/java-17-openjdk-amd64/bin/java",
             "default": true
         }
-    ],
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "another-lib/**/*.jar"
     ]
 }
