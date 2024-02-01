@@ -26,3 +26,17 @@ spec:
           requests:
             cpu: 100m
             memory: 512Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: github-copilot-demo
+spec:
+  type: NodePort
+  selector:
+    app: github-copilot-demo
+  ports:
+  - port: 80
+    name: "http"
+    targetPort: 8080
+    nodePort: 32400
