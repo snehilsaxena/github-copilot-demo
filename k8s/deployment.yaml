@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: github-copilot-demo
+  name: github-copilot-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: github-copilot-demo
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: github-copilot-demo
+    spec:
+      containers:
+      - image: brainupgrade/github-copilot-demo
+        name: github-copilot-demo
+        resources: 
+          limits:
+            cpu: 100m
+            memory: 128Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi
