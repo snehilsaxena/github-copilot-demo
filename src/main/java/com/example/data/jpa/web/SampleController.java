@@ -36,4 +36,16 @@ public class SampleController {
 	public String helloWorld() {
 		return this.cityService.getCity("Bath", "UK").getName();
 	}
+
+    @RequestMapping("/")
+	@ResponseBody
+	@Transactional(readOnly = true)
+	public String helloWorld() {
+		return this.cityService.getCity("Bath", "UK").getName();
+	}
+
+    @GetMapping("/rajesh")
+	public String checkHealth() {
+		return "OK";
+	}
 }
