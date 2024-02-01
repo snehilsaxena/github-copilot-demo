@@ -19,7 +19,9 @@
                 "vscjava.vscode-java-pack",
                 "vscjava.vscode-spring-boot-dashboard",
                 "vscjava.vscode-spring-initializr",
-                "pivotal.vscode-boot-dev-pack"
+                "pivotal.vscode-boot-dev-pack",
+                "GitHub.copilot",
+                "GitHub.copilot-chat"
             ]
         },
         "codespaces": {
