@@ -36,4 +36,9 @@ public class SampleController {
 	public String helloWorld() {
 		return this.cityService.getCity("Bath", "UK").getName();
 	}
+    @GetMapping("/rajesh")
+	public String checkHealth() {
+	// Implement your health check logic here
+	return "OK"; // A simple string indicating health status
+	}
 }
